@@ -1,8 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// bài này hàm rút gọn ps được viết bên ngoài struct, tham khảo nhe. Viết ngoài hay trong đều được cả, cách nào dễ hơn thì bé học nha
-
 struct ps
 {
     int tu, mau;
