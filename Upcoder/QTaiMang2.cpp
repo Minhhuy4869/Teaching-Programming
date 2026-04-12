@@ -4,12 +4,12 @@ using namespace std;
 
 struct arr
 {
-    int n, a[100];              // mảng a có 100 phần tử cố định  
+    int n, a[100];               
 };
 
 istream& operator >> (istream& in, arr &t)
 {
-    in>>t.n;                    // nhập số lượng phần tử của mảng
+    in>>t.n;                   
     for(int i=0; i<t.n; ++i)
     {
         in>>t.a[i];
@@ -17,7 +17,7 @@ istream& operator >> (istream& in, arr &t)
     return in;
 }
 
-ostream& operator << (ostream& out, arr t)  // toán tử xuất hong cần tham chiếu &
+ostream& operator << (ostream& out, arr t)  
 {
     for(int i=0; i<t.n; ++i)
     {
@@ -29,14 +29,14 @@ ostream& operator << (ostream& out, arr t)  // toán tử xuất hong cần tham
 arr operator + (arr t, arr h)
 {
     arr res;
-    res.n = max(t.n, h.n);      // ở đây phải khai báo thêm thư viện thuật toán algorithm để dùng hàm max nhe
+    res.n = max(t.n, h.n);      
     for(int i=0; i<res.n; ++i)
     {
-        res.a[i] = 0;           // Khởi tạo phần tử thứ i = 0 để xún dưới cộng
+        res.a[i] = 0;           
         if (i < t.n) 
-            res.a[i] += t.a[i]; // Nếu mảng t còn phần tử thì cộng vào
+            res.a[i] += t.a[i]; 
         if (i < h.n) 
-            res.a[i] += h.a[i]; // Nếu mảng h còn phần tử thì cộng vào
+            res.a[i] += h.a[i]; 
     }
     return res;
 }
