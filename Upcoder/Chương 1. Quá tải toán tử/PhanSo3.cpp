@@ -35,7 +35,7 @@ ps operator + (ps a, ps b)
 
 int main()
 {
-    ps p, s = {0, 1};        // ps mặc định là 0/1 nhe
+    ps p, s = {0, 1};        // ps mặc định là 0/1
     while(cin>>p)
     {
         s = s + p;
