@@ -1,11 +1,13 @@
 #include <iostream>
 using namespace std;
 
-int main () {
-    int x;
-    cin >> x;
-    cout << (x % 100) % 10 << endl;
-    cout << x / 100 << endl;
-    cout << (x / 10) % 10;   
+int main() {
+    int n;
+    cin >> n;
+
+    cout << n % 10 << endl;         
+    cout << n / 100 << endl;        
+    cout << (n / 10) % 10 << endl;   
+
     return 0;
 }
